@@ -1,0 +1,46 @@
+body 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+main
+{
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+article 
+{
+    flex: 2;
+    overflow-y: auto;
+}
+
+aside 
+{
+    flex: 1;
+    overflow-y: auto;
+}
+
+header 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.logo 
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+td,th
+{
+    padding: 10px;
+    border: 1px solid black;
+    font-weight: bold;
+    font-style: italic;
+}
