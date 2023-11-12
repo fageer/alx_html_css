@@ -44,3 +44,9 @@ td,th
     font-weight: bold;
     font-style: italic;
 }
+
+header ul li a:hover
+{
+color: rgb(39, 39, 39);
+font-weight: bold;
+}
