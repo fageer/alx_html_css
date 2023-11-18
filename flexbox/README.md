@@ -26,4 +26,4 @@
 
 ### Goal of this project
 - Below is an image of an already styled document. You are expected to achieve the same results by now applying flexbox for the layout.
- <img src="images/whole-project.png" alt="Techium logo" width="160" height="40">
+ <img src="images/whole-project.png">
