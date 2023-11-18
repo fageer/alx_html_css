@@ -373,12 +373,12 @@
   }
   
   /* Section SERVICES ============================= */
-  .section-services .row{
+  .section-services .row {
     flex-wrap: wrap;
   }
-  
+
   /* Section Latest news ============================= */
-  .section-latest-news .row{
+  .section-latest-news .row {
     flex-direction: row-reverse;
   }
 
