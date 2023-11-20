@@ -22,25 +22,6 @@
     line-height: 26px; 
     margin-bottom: 70px;
 }
-#polygon img {
-    width: 200px;
-    height: 200px;
-}
-#polygon #polygon-span {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 26px;
-}
-#section3 #polygon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    margin: 0px 100px;
-}
 /* ============== END SECTION3 ============ */
 .pentagon-container {
     text-align: center;
@@ -50,7 +31,6 @@
   width: 500px;
   height: 500px;
 }
-
 .pentagon-container::before,
 .pentagon-container::after {
   content: '6. Replace background image with... code!';
@@ -62,11 +42,9 @@
   left: 50%;
   transform: translateX(-150%);
 }
-
 .pentagon-container::before {
   transform: translateX(-100%) rotate(-100deg);
 }
-
 .pentagon-container::after {
   transform: translateX(-150%) rotate(-100deg);
 }
