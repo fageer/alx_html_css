@@ -10,11 +10,11 @@
 # HEAD_PHONES PROJECT:
 
 
-<img src="./headphones/images/README.jpg"alt="hearing">
+<img src="./headphones/images/README.jpg">
 
 
 
 # CSS_ADVANCED PROJECT:
 
 
-<img src="./css_advanced/images/readme.jpg"alt="hearing">
+<img src="./css_advanced/images/readme.jpg">
