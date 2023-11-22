@@ -69,19 +69,19 @@ header ul a:hover {
 .banner {
     padding: 100px;
 }
-.banner div h1 {
+.banner .title h1 {
     color: var(--col-white);
     font-size: 120px;
     font-weight: 700;
 }
-.banner div h1+p {
-    word-spacing: 60px;
+.banner .title h1+p {
+    word-spacing: 100px;
     color: var(--col-white);
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 50px;
 }
-.banner div button {
+.banner .title button {
     width: 170px;
     height: 44px;
     border-radius: 22px;
