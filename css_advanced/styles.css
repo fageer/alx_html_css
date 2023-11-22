@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Metal+Mania&family=Roboto:ital,wght@0,100;0,400;1,300&family=Tajawal:wght@200;300;400;500;700;800&display=swap');
+:root {
+    --bgcolor: #C271FF;
+    --black-white: #071629;
+    --col-white: #fff;
+}
 * {
     margin: 0;
     padding: 0;
@@ -8,12 +14,13 @@ body {
     background-position:top;
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Lora';
 }
 .section {
     align-items: center;
     text-align: center;
 }
-a{
+a {
     text-decoration: none;
 }
 button:hover {
@@ -28,19 +35,33 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-header .navbar {
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+input[type="checkbox"]+label {
+    display: none;
+}
+.hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:500px;
+}
+header ul {
+    list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
 }
-header .navbar a {
-    color: #FFF;
+header ul li a {
+    color: var(--col-white);
     font-size: 12px;
     font-weight: 700;
 }
-header .navbar a:hover {
-    color: #C271FF;
+header ul a:hover {
+    color: var(--bgcolor);
 }
 /* ============== END HEADER ============ */
 
@@ -49,13 +70,13 @@ header .navbar a:hover {
     padding: 100px;
 }
 .banner div h1 {
-    color: #FFF;
+    color: var(--col-white);
     font-size: 120px;
     font-weight: 700;
 }
 .banner div h1+p {
     word-spacing: 60px;
-    color: #FFF;
+    color: var(--col-white);
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 50px;
@@ -64,22 +85,22 @@ header .navbar a:hover {
     width: 170px;
     height: 44px;
     border-radius: 22px;
-    background: #C271FF;
+    background: var(--bgcolor);
     border: none;
-    box-shadow: 4px 4px 4px black;
-    color: #FFF;
+    box-shadow: 4px 4px 4px var(--black-white);
+    color: var(--col-white);
     font-size: 14px;
     font-weight: 400;
     padding: 10px;
     margin-bottom: 200px;
 }
 .banner div span {
-    color: #C271FF;
+    color: var(--bgcolor);
     font-size: 32px;
     font-weight: 700;
 }
 .banner div h2 {
-    color: #FFF;
+    color: var(--col-white);
     font-size: 32px;
     font-weight: 300;
     margin-bottom: 80px;
@@ -97,13 +118,13 @@ header .navbar a:hover {
     margin-bottom: 10px;
 }
 .banner .users div h3 {
-    color: #FFF;
+    color: var(--col-white);
     font-size: 18px;
     font-weight: 900;
     line-height: 27px; 
 }
 .banner .users div p {
-    color: #FFF;
+    color: var(--col-white);
     font-size: 16px;
     font-style: italic;
     font-weight: 100;
@@ -114,7 +135,7 @@ header .navbar a:hover {
 /* ============== SECTION2 ============ */
 .quotes {
     padding: 100px;
-    background: #C271FF;
+    background: var(--bgcolor);
 }
 .quotes .q {
     display: flex;
@@ -129,20 +150,20 @@ header .navbar a:hover {
     align-items: start;
 }
 .quotes .q div q {
-    color: #FFF;
+    color: var(--col-white);
     font-size: 22px;
     font-weight: 100;
     line-height: 33.6px;
     margin-bottom:30px ;
 }
 .quotes .q div q+p {
-    color: #FFF;
+    color: var(--col-white);
     font-size: 22px;
     font-weight: 700;
     line-height: 33.6px;
 }
 .quotes .q div q+p+p {
-    color: #FFF;
+    color: var(--col-white);
     font-size: 22px;
     font-style: italic;
     font-weight: 400;
@@ -153,16 +174,16 @@ header .navbar a:hover {
 /* ============== SECTION3 ============ */
 .videos-list {
     padding: 100px;
-    background: #fff;
+    background: var(--col-white);
 }
 .videos-list h1 {
-    color: #071629;
+    color: var(--black-white);
     font-size: 32px;
     font-weight: 300;
     margin-bottom: 60px;
 }
 .videos-list h1 span {
-    color: #C271FF;
+    color: var(--bgcolor);
     font-size: 32px;
     font-weight: 700;
 }
@@ -176,7 +197,7 @@ header .navbar a:hover {
     text-align: start;
 }
 .video h2 {
-    color: #071629;
+    color: var(--black-white);
     font-size: 16px;
     font-weight: 700;
     margin: 10px 0px;
@@ -193,14 +214,14 @@ header .navbar a:hover {
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
-    color: #C271FF;
+    color: var(--bgcolor);
 }
 .ph img {
     width: 30px;
     height: 30px;
 }
 .ph h3 {
-    color: #C271FF;
+    color: var(--bgcolor);
     font-size: 14px;
     font-weight: 600;
     line-height: 27px;
@@ -209,10 +230,10 @@ header .navbar a:hover {
     display: flex;
     align-items: center;
     gap: 100px;
-    color: #C271FF;
+    color: var(--bgcolor);
 }
 .rate p {
-    color: #C271FF;
+    color: var(--bgcolor);
     font-size: 14px;
     font-weight: 600;
     line-height: 27px;
@@ -223,15 +244,15 @@ header .navbar a:hover {
 .membership{
     padding-top: 100px;
     padding-bottom: 50px;
-    background: #071629;
+    background: var(--black-white);
 }
 .membership h1 {
-    color: #FFF;
+    color: var(--col-white);
     font-size: 32px;
     font-weight: 300;
 }
 .membership h1 span {
-    color: #C271FF;
+    color: var(--bgcolor);
     font-size: 32px;
     font-weight: 700;
 }
@@ -246,24 +267,24 @@ header .navbar a:hover {
     width: 170px;
     height: 44px;
     border-radius: 22px;
-    background: #C271FF;
+    background: var(--bgcolor);
     border: none;
     margin-top: 100px;
-    color: #FFF;
+    color: var(--col-white);
     font-size: 12px;
     font-weight: 600;
     padding: 10px;
-    box-shadow: 4px 4px 4px black;
+    box-shadow: 4px 4px 4px var(--black-white);
 }
 #smiles h2 {
-    color: #FFF;
+    color: var(--col-white);
     font-size: 18px;
     font-weight: 600;
     line-height: 26px;
     margin-top: 20px;
 }
 #smiles p {
-    color: #FFF;
+    color: var(--col-white);
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
@@ -275,10 +296,10 @@ header .navbar a:hover {
 .FAQ {
     padding-top: 100px;
     padding-bottom: 50px;
-    background: #fff;
+    background: var(--col-white);
 }
 .FAQ h1 {
-    color: #071629;
+    color: var(--black-white);
     font-size: 60px;
     font-weight: 300;
     margin-bottom: 70px;
@@ -292,7 +313,7 @@ header .navbar a:hover {
     margin-bottom: 100px;
 }
 .faq h2 {
-    color: #071629;
+    color: var(--black-white);
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -309,7 +330,7 @@ header .navbar a:hover {
 .foot {
     padding-top: 100px;
     padding-bottom: 30px;
-    background: #071629;
+    background: var(--black-white);
 }
 .foot div {
     display: flex;
@@ -318,7 +339,7 @@ header .navbar a:hover {
     margin-bottom: 50px;
 }
 .foot p {
-    color: #FFF;
+    color: var(--col-white);
     font-size: 12px;
     font-weight: 400;
     opacity: 0.3517;
@@ -326,67 +347,122 @@ header .navbar a:hover {
 /* ============== END FOOTER ============ */
 
 /* ============== RESPONSIVE ============ */
-@media (min-width:0px) and (max-width:480px) {
-    header .navbar {
-        display: none;
+@media screen and (min-width:0px) and (max-width:480px) {
+    input[type="checkbox"]+label {
+        display: block;
+        cursor: pointer;
     }
-    header {
-        padding:30px 90px;
-    }
-    .banner .title h1 {
-        text-align: center;
-        font-size: 30px;
-        width: auto;
-    }
-    .banner .title p {
-        word-spacing:8px;
-    }
-    .q {
-        padding:30px 20px;
-        flex-wrap: wrap;
-        width: auto;
-    }
-    .users {
-        padding:30px 20px;
-        flex-wrap: wrap;
-        width: auto;
-    }
-    .videos {
-        padding:30px 20px;
-        flex-wrap: wrap;
-        width: auto;
-    }
-    #smiles {
-        padding:30px 20px;
-        flex-wrap: wrap;
-        width: auto;
-    }
-    .faq {
-        padding:30px 20px;
-        flex-wrap: wrap;
-        width: auto;
-    }
-    .foot div {
+    header ul {
+        position: absolute;
         flex-direction: column;
-        width: auto;
-        gap: 30px; 
+        align-items: center;
+        gap: 1em;
+        top: 100px;
+        left: -100%;
+        transition: 0.5s;
     }
-}
-
-@media (min-width:481px) and (max-width:1050px) {
-    header .navbar {
-        display: none;
+    input[type="checkbox"]:checked ~ ul {
+        left:40px;
+    }
+    header ul a:hover {
+        color: var(--bgcolor);
     }
     header {
         padding:30px;
+        align-items: center;
+    }
+    header .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .banner .title h1 {
+        text-align: center;
+        font-size: 30px;  
     }
     .banner .title p {
         word-spacing:8px;
     }
     .q {
         padding:30px 20px;
+        flex-wrap: wrap; 
+    }
+    .users {
+        padding:30px 20px;
         flex-wrap: wrap;
-        width: auto;
+    }
+    .videos {
+        padding:30px 20px;
+        flex-wrap: wrap;   
+    }
+    #smiles {
+        padding:30px 20px;
+        flex-wrap: wrap;  
+    }
+    .faq {
+        padding:30px 20px;
+        flex-wrap: wrap;  
+    }
+    .foot div {
+        flex-direction: column; 
+        gap: 30px; 
+    }
+}
+@media screen and (min-width:481px) and (max-width:900px) {
+    header {
+        padding:30px 10px;
+    }
+    .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+    }
+    header ul a:hover {
+        color: var(--bgcolor);
+    }
+    .banner .title p {
+        word-spacing:8px;
+    }
+    .q {
+        padding:30px 20px;
+        flex-wrap: wrap;  
+    }
+    .banner .users {
+        padding:30px 20px;
+        flex-wrap: wrap;
+        
+    }
+    .videos {
+        padding:30px 20px;
+        flex-wrap: wrap; 
+    }
+    .membership #smiles {
+        padding:30px 20px;
+        flex-wrap: wrap;  
+    }
+    .faq {
+        padding:30px 20px;
+        flex-wrap: wrap;    
+    } 
+}
+
+@media screen and (min-width:1100px) {
+    header {
+        padding:30px 100px;
+    }
+    header ul a:hover {
+        color: var(--bgcolor);
+    }
+    .banner .title p {
+        word-spacing:8px;
+    }
+    .q {
+        padding:30px 20px;
+        flex-wrap: wrap;   
     }
     .users {
         padding:30px 20px;
@@ -395,18 +471,15 @@ header .navbar a:hover {
     }
     .videos {
         padding:30px 20px;
-        flex-wrap: wrap;
-        width: auto;
+        flex-wrap: wrap;   
     }
     #smiles {
         padding:30px 20px;
-        flex-wrap: wrap;
-        width: auto;
+        flex-wrap: wrap;    
     }
     .faq {
         padding:30px 20px;
-        flex-wrap: wrap;
-        width: auto;
+        flex-wrap: wrap;   
     }
-}
+} 
 /* ============== END RESPONSIVE ============ */
