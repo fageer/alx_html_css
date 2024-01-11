@@ -1,3 +1,4 @@
+<img src="./images/readme.jpg" alt="Image">
 # Concepts
 
 ## For this project, we expect you to look at these concepts:
@@ -45,4 +46,4 @@
 
 ### The final result will be like this:-
 
-<img src="./images/readme.jpg" alt="Image">
+
